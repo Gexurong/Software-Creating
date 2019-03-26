@@ -25,6 +25,7 @@ Please use the following password to proceed to installation:
 b5adfa35e63143c0a0c4558096763bcf
 
 This may also be found at: D:\Program Files (x86)\Jenkins\secrets\initialAdminPassword
+
 4.然后开始下载推荐插件。
 
 5.当下一次准备打开Jenkins的时候，需要先在控制台把Jenkins开起来，java -jar jenkins.war。
