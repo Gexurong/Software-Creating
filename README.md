@@ -8,7 +8,10 @@ This project is for our class.
 we use Jenkins to build a CI/CD pipline.There is a short description about it.
 
 版本号：Jenkins 2.164.1 java version "1.8.0_181"
+
 需要注意，Jenkins不支持java9和java11.
+
+
 安装：
 1.官网上给了两种安装方式，一种是各个系统的installer，一种是普通的.war文件。windows的话直接安装windows installer那种就好，自动安装。
 
