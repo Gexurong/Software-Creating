@@ -1,21 +1,19 @@
 <?php
-class News_model extends CI_Model {
+class Book_model extends CI_Model {
 
     public function __construct()
     {
-        //$this->load->database();还没配数据库
+        $this->load->database();
     }
-    /*
-    public function get_book($slug = FALSE)
+    
+    public function get_book($name = FALSE)
     {
-        if ($slug === FALSE)
-        {
-            $query = $this->db->get('book');
-            return $query->result_array();
-        }
-
-        $query = $this->db->get_where('book', array('slug' => $slug));
+        $sql = "SELECT * FROM comic";
+        $query = $this->db->query($sql);
         return $query->row_array();
+        
+        #return $this->db->_error_message();
+        #return "ok1";
     }
-    */
+    
 }
