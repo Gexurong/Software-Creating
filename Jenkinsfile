@@ -1,6 +1,8 @@
-Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { dockerfile true }
+    agent { 
+	dockerfile true
+	dir 'docker'
+	 }
     stages {
         stage('Test') {
             steps {
