@@ -13,13 +13,15 @@ class Book extends CI_Controller {
 		$this->load->view('list');
     }
     
-    public function info()
+    public function info($id)
 	{
-		$this->load->view('detail');
+        $data['book'] = $this->book_model->get_book_info($id);
+        $this->load->view('detail', $data);
     }
     
-    public function read()
+    public function read($id, $chapterid)
     {
+        $data['page'] = $this->book_model->get_page($id, $chapterid);
         $this->load->view('read');
     }
 }
