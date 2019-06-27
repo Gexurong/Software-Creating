@@ -4,7 +4,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Hello world!'
-                bat 'setup.bat'
+                bat 'CICD\\setup.bat'
             }
         }
     }
