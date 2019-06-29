@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['book/(:num)'] = 'book/info/$1';
 $route['book/(:num)/(:num)'] = 'book/read/$1/$2';
-$route['default_controller'] = 'welcome';
+$route['book/(:num)/post_comment'] = 'book/post_comment/$1';
+$route['default_controller'] = 'book';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
